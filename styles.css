@@ -9,3 +9,32 @@ body{
 .post-header{
     display: flex;
 }
+
+.row_collage{
+    padding: 3%;
+    border: 3px;
+}
+
+.post-img{
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+.ph_local{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fila_row_img{
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo_instagram{
+      margin: 0 1.5% 0 0;
+}

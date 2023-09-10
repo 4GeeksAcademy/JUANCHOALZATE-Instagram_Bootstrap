@@ -1,120 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Instagram Feed con Bootstrap</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
+
 <body>
-   <div class="container fluid">
+    <div class="container fluid">
         <!-- PRIMERA LINEA: LOGO INSTAGRAM BOTONES IZQ: NEW POST, CONFIG -->
 
         <div class="row">
-            <div class="col-md-4">
-                <i class="fa-brands fa-instagram"></i> <p>Instagram</p>
-            </div>            
+            <div class="col-md-4 d-flex flex-row align-items-center">
+                <i class="fa-brands fa-instagram logo_instagram "></i>
+                <h5>Instagram</h5>
+            </div>
             <div class="col-md-4"></div>
-            <div class="col-md-4">  
+            <div class="col-md-4">
                 <!-- aqui van los botones de new_post, config -->
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                     <button class="btn btn-primary me-md-2" type="button">Create a new post</button>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-thin fa-gear" style="color: #4f5a6d;"></i>
+                            <i class="fa-thin fa-gear"></i>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                      </div>
-            </div> 
-        </div>       
-        
-        
-
-        <div class="row">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-thin fa-table-cells" style="color: #324971;"></i></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-                </li>
-            </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-              </div>
-        </div>
-
-
-        <!-- BOTON SELECTOR TIPO VISTA -->
-        <div class="row"> </div>
-
-        <!-- DIVIDO LA PANTALLA EN 3 COLUMNAS, EN LA MITAR PONGO LOS POST INDIVIDUALES -->
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-               
-                <!-- post 1-->
-                <div class="post">
-                    <div class="post-header">
-                        <div class="header-text">
-                            <P>My Crazy dog Spark!</P>
-                        </div>
-                        <div class="header-text">
-                            <P>08/26</P>
-                        </div>        
-                    </div>
-                    <div class="post-img">
-                        <img src="https://picsum.photos/500/500" alt="crazy_dog">
-                    </div>
-                    <div class="post-body">
-                        <p><strong>204 Likes</strong></p>
-                        <p>This is an example of a very good photo that you can on instagram</p>
                     </div>
                 </div>
-                <!-- post 2-->
-
-                <!-- post 3-->
-                <div class="post">
-                    <div class="post-header">
-                        <div class="header-text">
-                            <P>JUAN ALZATE</P>
-                        </div>    
-                    </div>
-                    <div class="post-img">
-                        <img src="https://picsum.photos/500/500" alt="paisaje">
-                    </div>
-                    <div class="post-body">
-                        <p>Link by <strong>4GeeksAcademyc, Html5, Web</strong> and 10.000 others  </p>
-                    </div>
-                </div>
-
-                <!-- post 3-->
-                <div class="post">
-                    <div class="post-header">
-                        <div class="header-text">
-                            <P>JUAN ALZATE</P>
-                        </div>    
-                    </div>
-                    <div class="post-img">
-                        <img src="https://picsum.photos/500/500" alt="paisaje">
-                    </div>
-                    <div class="post-body">
-                        <p>Link by <strong>4GeeksAcademyc, Html5, Web</strong> and 10.000 others  </p>
-                    </div>
-                </div>
-
-            <div class="col-md-3"></div>    
             </div>
+
+
+
+            <div class="row">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true"><i class="fa-solid fa-table-cells-large"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Profile</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">...</div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        ...</div>
+                </div>
+            </div>
+
+
+            <!-- BOTON SELECTOR TIPO VISTA -->
+            <div class="row"> </div>
+
+            <!-- DIVIDO LA PANTALLA EN 3 COLUMNAS, EN LA MITAR PONGO LOS POST INDIVIDUALES -->
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+
+                    <!-- post 1-->
+                    <div class="post">
+                        <div class="post-header ph_local">
+                            <div class="header-text">
+                                <p>My Crazy dog Spark!</p>
+                            </div>
+                            <div class="header-text">
+                                <P>08/26</P>
+                            </div>
+                        </div>
+                        <div class="post-img">
+                            <img src="https://caracol.com.co/resizer/ORUr63D3L5p34NevA9Acm4lMDFw=/650x488/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/GAULRJST6ZD25KV3BT66YOJ6PY.jpg"
+                                alt="crazy_dog">
+                        </div>
+                        <div class="post-body">
+                            <p><strong>204 Likes</strong></p>
+                            <p>This is an example of a very good photo that you can on instagram</p>
+                        </div>
+                    </div>
+                    <!-- post 2-->
+
+                    <!-- post 3-->
+                    <div class="post">
+                        <div class="post-header ph_local">
+                            <div class="header-text">
+                                <P>JUAN ALZATE</P>
+                            </div>
+                        </div>
+                        <div class="post-img">
+                            <img src="https://picsum.photos/500/500" alt="paisaje">
+                        </div>
+                        <div class="post-body">
+                            <p>Link by <strong>4GeeksAcademyc, Html5, Web</strong> and 10.000 others </p>
+                        </div>
+                    </div>
+
+                    <!-- post 3-->
+                    <div class="post">
+                        <div class="post-header ph_local">
+                            <div class="header-text">
+                                <P>JUAN ALZATE</P>
+                            </div>
+                        </div>
+                        <div class="post-img">
+                            <img src="https://picsum.photos/500/500" alt="paisaje">
+                        </div>
+                        <div class="post-body">
+                            <p>Link by <strong>4GeeksAcademyc, Html5, Web</strong> and 10.000 others </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <!-- POST INVIVIDUAL -->
+
+            <!-- COLLAGE POST -->
+
+            <div class="row_collage">
+                <!-- primera fila -->
+                <div class="row mt-4">
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                </div>
+                <!-- segunda fila -->
+                <div class="row mt-4">
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                </div>
+                <!-- tercera fila -->
+                <div class="row mt-4">
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                </div>
+                <!-- cuarta fila -->
+                <div class="row mt-4">
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                    <div class="col-md-4"><img class="img-fluid" src="https://picsum.photos/500/500" alt="paisaje"></div>
+                </div>
+            </div>
+
+            <!-- COLLAGE POST -->
+
         </div>
-        <!-- POST INVIVIDUAL --> 
-   </div>  
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
